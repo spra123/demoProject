@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import Pages.scenarios;
+import Pages.homepage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,31 +9,31 @@ import io.cucumber.java.en.When;
 public class scenarioSteps {
     @Given("user clicks on the given link")
     public void given_link(){
-        scenarios.launchApp();
+        homepage.launchApp();
     }
     @Given("user clicks on the dropdown")
         public void dropDown(){
-            scenarios.clickondropdown();
+            homepage.clickondropdown();
         }
     @When("user selects given option")
     public void givenoption(){
-        scenarios.selectGivenoption();
+        homepage.selectGivenoption();
         }
     @Then("user clicks on get started")
     public void getstarted(){
-        scenarios.getStarted();
+        homepage.getStarted();
     }
     @And("user clicks on the search button")
     public void searchbutton(){
-        scenarios.searchbutton();
+        homepage.searchbutton();
     }
     @Then("user enters any {string}")
         public void user_enters_with(String string)  {
-            scenarios.entersTopic(string);
+            homepage.entersTopic(string);
     }
     @Then("user closes browser window")
      public void closeWindow(){
-        scenarios.quitBrowser();
+        homepage.quitBrowser();
     }
     }
 

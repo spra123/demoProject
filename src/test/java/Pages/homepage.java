@@ -7,7 +7,7 @@ import com.microsoft.playwright.Playwright;
 
 
 
-public class scenarios {
+public class homepage {
     public static Playwright playwright = Playwright.create();
     protected static BrowserType chrome = playwright.chromium();
     protected static Browser browser = chrome.launch(new BrowserType.LaunchOptions().setHeadless(false));
